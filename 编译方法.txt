@@ -1,0 +1,27 @@
+http://curl.haxx.se/download.html
+http://www.openssl.org/
+http://code.google.com/p/curlpp/
+
+1.安装ActivePerl
+2.三个都解压到同一个目录
+3.编译zlib和openssl
+4.打开curl-7.30.0\lib\Makefile.vc10
+修改
+OPENSSL_PATH   = ../../openssl-1.0.1e
+ZLIB_PATH  = ../../zlib-1.2.8
+5. 打开
+lib\config-win32.h
+添加宏
+#define HTTP_ONLY
+#define USE_SSLEAY
+#define USE_OPENSSL
+
+
+6.编译curl
+
+
+
+nmake /f Makefile.vc10 CFG=release-dll-ssl-dll-zlib-dll
+nmake /f Makefile.vc10 CFG=debug-dll-ssl-dll-zlib-dll
+nmake /f Makefile.vc10 CFG=release-ssl-zlib
+nmake /f Makefile.vc10 CFG=debug-ssl-zlib
