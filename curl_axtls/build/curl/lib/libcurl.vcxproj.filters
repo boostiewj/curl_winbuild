@@ -1,739 +1,252 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\file.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\timeval.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\base64.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\hostip.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\progress.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\formdata.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\cookie.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\sendf.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\ftp.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\url.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\dict.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\if2ip.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\speedcheck.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\ldap.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\version.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\getenv.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\escape.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\mprintf.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\telnet.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\netrc.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\getinfo.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\transfer.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\strcase.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\easy.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\security.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_fnmatch.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\fileinfo.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\ftplistparser.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\wildcard.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\krb5.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\memdebug.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http_chunks.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\strtok.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\connect.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\llist.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\hash.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\multi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\content_encoding.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\share.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http_digest.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\md4.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\md5.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http_negotiate.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\inet_pton.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\strtoofft.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\strerror.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\amigaos.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\hostasyn.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\hostip4.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\hostip6.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\hostsyn.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\inet_ntop.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\parsedate.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\select.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\tftp.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\splay.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\strdup.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\socks.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\ssh.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_addrinfo.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\socks_gssapi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\socks_sspi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_sspi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\slist.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\nonblock.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_memrchr.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\imap.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\pop3.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\smtp.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\pingpong.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\rtsp.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_threads.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\warnless.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\hmac.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_rtmp.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\openldap.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_gethostname.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\gopher.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\idn_win32.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http_proxy.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\non-ascii.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\asyn-ares.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\asyn-thread.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_gssapi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http_ntlm.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_ntlm_wb.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_ntlm_core.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_sasl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\rand.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_multibyte.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\hostcheck.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\conncache.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\pipeline.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\dotdot.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\x509asn1.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http2.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\smb.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_endian.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_des.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\system_win32.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\vauth.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\cleartext.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\cram.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\digest.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\digest_sspi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\krb5_gssapi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\krb5_sspi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\ntlm.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\ntlm_sspi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\oauth2.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\spnego_gssapi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\spnego_sspi.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\openssl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\gtls.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\vtls.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\nss.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\polarssl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\polarssl_threadlock.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\axtls.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\cyassl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\schannel.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\darwinssl.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\gskit.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\mbedtls.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClCompile Include=".\file.c" />
+    <ClCompile Include=".\timeval.c" />
+    <ClCompile Include=".\base64.c" />
+    <ClCompile Include=".\hostip.c" />
+    <ClCompile Include=".\progress.c" />
+    <ClCompile Include=".\formdata.c" />
+    <ClCompile Include=".\cookie.c" />
+    <ClCompile Include=".\http.c" />
+    <ClCompile Include=".\sendf.c" />
+    <ClCompile Include=".\ftp.c" />
+    <ClCompile Include=".\url.c" />
+    <ClCompile Include=".\dict.c" />
+    <ClCompile Include=".\if2ip.c" />
+    <ClCompile Include=".\speedcheck.c" />
+    <ClCompile Include=".\ldap.c" />
+    <ClCompile Include=".\version.c" />
+    <ClCompile Include=".\getenv.c" />
+    <ClCompile Include=".\escape.c" />
+    <ClCompile Include=".\mprintf.c" />
+    <ClCompile Include=".\telnet.c" />
+    <ClCompile Include=".\netrc.c" />
+    <ClCompile Include=".\getinfo.c" />
+    <ClCompile Include=".\transfer.c" />
+    <ClCompile Include=".\strcase.c" />
+    <ClCompile Include=".\easy.c" />
+    <ClCompile Include=".\security.c" />
+    <ClCompile Include=".\curl_fnmatch.c" />
+    <ClCompile Include=".\fileinfo.c" />
+    <ClCompile Include=".\ftplistparser.c" />
+    <ClCompile Include=".\wildcard.c" />
+    <ClCompile Include=".\krb5.c" />
+    <ClCompile Include=".\memdebug.c" />
+    <ClCompile Include=".\http_chunks.c" />
+    <ClCompile Include=".\strtok.c" />
+    <ClCompile Include=".\connect.c" />
+    <ClCompile Include=".\llist.c" />
+    <ClCompile Include=".\hash.c" />
+    <ClCompile Include=".\multi.c" />
+    <ClCompile Include=".\content_encoding.c" />
+    <ClCompile Include=".\share.c" />
+    <ClCompile Include=".\http_digest.c" />
+    <ClCompile Include=".\md4.c" />
+    <ClCompile Include=".\md5.c" />
+    <ClCompile Include=".\http_negotiate.c" />
+    <ClCompile Include=".\inet_pton.c" />
+    <ClCompile Include=".\strtoofft.c" />
+    <ClCompile Include=".\strerror.c" />
+    <ClCompile Include=".\amigaos.c" />
+    <ClCompile Include=".\hostasyn.c" />
+    <ClCompile Include=".\hostip4.c" />
+    <ClCompile Include=".\hostip6.c" />
+    <ClCompile Include=".\hostsyn.c" />
+    <ClCompile Include=".\inet_ntop.c" />
+    <ClCompile Include=".\parsedate.c" />
+    <ClCompile Include=".\select.c" />
+    <ClCompile Include=".\tftp.c" />
+    <ClCompile Include=".\splay.c" />
+    <ClCompile Include=".\strdup.c" />
+    <ClCompile Include=".\socks.c" />
+    <ClCompile Include=".\ssh.c" />
+    <ClCompile Include=".\curl_addrinfo.c" />
+    <ClCompile Include=".\socks_gssapi.c" />
+    <ClCompile Include=".\socks_sspi.c" />
+    <ClCompile Include=".\curl_sspi.c" />
+    <ClCompile Include=".\slist.c" />
+    <ClCompile Include=".\nonblock.c" />
+    <ClCompile Include=".\curl_memrchr.c" />
+    <ClCompile Include=".\imap.c" />
+    <ClCompile Include=".\pop3.c" />
+    <ClCompile Include=".\smtp.c" />
+    <ClCompile Include=".\pingpong.c" />
+    <ClCompile Include=".\rtsp.c" />
+    <ClCompile Include=".\curl_threads.c" />
+    <ClCompile Include=".\warnless.c" />
+    <ClCompile Include=".\hmac.c" />
+    <ClCompile Include=".\curl_rtmp.c" />
+    <ClCompile Include=".\openldap.c" />
+    <ClCompile Include=".\curl_gethostname.c" />
+    <ClCompile Include=".\gopher.c" />
+    <ClCompile Include=".\idn_win32.c" />
+    <ClCompile Include=".\http_proxy.c" />
+    <ClCompile Include=".\non-ascii.c" />
+    <ClCompile Include=".\asyn-ares.c" />
+    <ClCompile Include=".\asyn-thread.c" />
+    <ClCompile Include=".\curl_gssapi.c" />
+    <ClCompile Include=".\http_ntlm.c" />
+    <ClCompile Include=".\curl_ntlm_wb.c" />
+    <ClCompile Include=".\curl_ntlm_core.c" />
+    <ClCompile Include=".\curl_sasl.c" />
+    <ClCompile Include=".\rand.c" />
+    <ClCompile Include=".\curl_multibyte.c" />
+    <ClCompile Include=".\hostcheck.c" />
+    <ClCompile Include=".\conncache.c" />
+    <ClCompile Include=".\pipeline.c" />
+    <ClCompile Include=".\dotdot.c" />
+    <ClCompile Include=".\x509asn1.c" />
+    <ClCompile Include=".\http2.c" />
+    <ClCompile Include=".\smb.c" />
+    <ClCompile Include=".\curl_endian.c" />
+    <ClCompile Include=".\curl_des.c" />
+    <ClCompile Include=".\system_win32.c" />
+    <ClCompile Include=".\vauth\vauth.c" />
+    <ClCompile Include=".\vauth\cleartext.c" />
+    <ClCompile Include=".\vauth\cram.c" />
+    <ClCompile Include=".\vauth\digest.c" />
+    <ClCompile Include=".\vauth\digest_sspi.c" />
+    <ClCompile Include=".\vauth\krb5_gssapi.c" />
+    <ClCompile Include=".\vauth\krb5_sspi.c" />
+    <ClCompile Include=".\vauth\ntlm.c" />
+    <ClCompile Include=".\vauth\ntlm_sspi.c" />
+    <ClCompile Include=".\vauth\oauth2.c" />
+    <ClCompile Include=".\vauth\spnego_gssapi.c" />
+    <ClCompile Include=".\vauth\spnego_sspi.c" />
+    <ClCompile Include=".\vtls\openssl.c" />
+    <ClCompile Include=".\vtls\gtls.c" />
+    <ClCompile Include=".\vtls\vtls.c" />
+    <ClCompile Include=".\vtls\nss.c" />
+    <ClCompile Include=".\vtls\polarssl.c" />
+    <ClCompile Include=".\vtls\polarssl_threadlock.c" />
+    <ClCompile Include=".\vtls\axtls.c" />
+    <ClCompile Include=".\vtls\cyassl.c" />
+    <ClCompile Include=".\vtls\schannel.c" />
+    <ClCompile Include=".\vtls\darwinssl.c" />
+    <ClCompile Include=".\vtls\gskit.c" />
+    <ClCompile Include=".\vtls\mbedtls.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\arpa_telnet.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\netrc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\file.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\timeval.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\hostip.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\progress.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\formdata.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\cookie.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\sendf.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\ftp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\url.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\dict.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\if2ip.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\speedcheck.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\urldata.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_ldap.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\escape.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\telnet.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\getinfo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\strcase.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_sec.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\memdebug.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http_chunks.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_fnmatch.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\wildcard.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\fileinfo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\ftplistparser.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\strtok.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\connect.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\llist.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\hash.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\content_encoding.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\share.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_md4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_md5.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http_digest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http_negotiate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\inet_pton.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\amigaos.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\strtoofft.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\strerror.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\inet_ntop.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curlx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_memory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_setup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\transfer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\select.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\easyif.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\multiif.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\parsedate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\tftp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\sockaddr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\splay.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\strdup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\socks.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\ssh.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_base64.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_addrinfo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_sspi.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\slist.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\nonblock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_memrchr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\imap.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\pop3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\smtp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\pingpong.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\rtsp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_threads.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\warnless.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_hmac.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_rtmp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_gethostname.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\gopher.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http_proxy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\non-ascii.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\asyn.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http_ntlm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_gssapi.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_ntlm_wb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_ntlm_core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_sasl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_multibyte.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\hostcheck.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\conncache.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_setup_once.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\multihandle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\setup-vms.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\pipeline.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\dotdot.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\x509asn1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\http2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\sigpipe.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\smb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_endian.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_des.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_printf.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\system_win32.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\rand.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\vauth.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\digest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vauth\ntlm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\openssl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\vtls.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\gtls.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\nssg.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\polarssl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\polarssl_threadlock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\axtls.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\cyassl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\schannel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\darwinssl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\gskit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\vtls\mbedtls.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\lib\curl_config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\curl\include\curl\curlbuild.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include=".\arpa_telnet.h" />
+    <ClInclude Include=".\netrc.h" />
+    <ClInclude Include=".\file.h" />
+    <ClInclude Include=".\timeval.h" />
+    <ClInclude Include=".\hostip.h" />
+    <ClInclude Include=".\progress.h" />
+    <ClInclude Include=".\formdata.h" />
+    <ClInclude Include=".\cookie.h" />
+    <ClInclude Include=".\http.h" />
+    <ClInclude Include=".\sendf.h" />
+    <ClInclude Include=".\ftp.h" />
+    <ClInclude Include=".\url.h" />
+    <ClInclude Include=".\dict.h" />
+    <ClInclude Include=".\if2ip.h" />
+    <ClInclude Include=".\speedcheck.h" />
+    <ClInclude Include=".\urldata.h" />
+    <ClInclude Include=".\curl_ldap.h" />
+    <ClInclude Include=".\escape.h" />
+    <ClInclude Include=".\telnet.h" />
+    <ClInclude Include=".\getinfo.h" />
+    <ClInclude Include=".\strcase.h" />
+    <ClInclude Include=".\curl_sec.h" />
+    <ClInclude Include=".\memdebug.h" />
+    <ClInclude Include=".\http_chunks.h" />
+    <ClInclude Include=".\curl_fnmatch.h" />
+    <ClInclude Include=".\wildcard.h" />
+    <ClInclude Include=".\fileinfo.h" />
+    <ClInclude Include=".\ftplistparser.h" />
+    <ClInclude Include=".\strtok.h" />
+    <ClInclude Include=".\connect.h" />
+    <ClInclude Include=".\llist.h" />
+    <ClInclude Include=".\hash.h" />
+    <ClInclude Include=".\content_encoding.h" />
+    <ClInclude Include=".\share.h" />
+    <ClInclude Include=".\curl_md4.h" />
+    <ClInclude Include=".\curl_md5.h" />
+    <ClInclude Include=".\http_digest.h" />
+    <ClInclude Include=".\http_negotiate.h" />
+    <ClInclude Include=".\inet_pton.h" />
+    <ClInclude Include=".\amigaos.h" />
+    <ClInclude Include=".\strtoofft.h" />
+    <ClInclude Include=".\strerror.h" />
+    <ClInclude Include=".\inet_ntop.h" />
+    <ClInclude Include=".\curlx.h" />
+    <ClInclude Include=".\curl_memory.h" />
+    <ClInclude Include=".\curl_setup.h" />
+    <ClInclude Include=".\transfer.h" />
+    <ClInclude Include=".\select.h" />
+    <ClInclude Include=".\easyif.h" />
+    <ClInclude Include=".\multiif.h" />
+    <ClInclude Include=".\parsedate.h" />
+    <ClInclude Include=".\tftp.h" />
+    <ClInclude Include=".\sockaddr.h" />
+    <ClInclude Include=".\splay.h" />
+    <ClInclude Include=".\strdup.h" />
+    <ClInclude Include=".\socks.h" />
+    <ClInclude Include=".\ssh.h" />
+    <ClInclude Include=".\curl_base64.h" />
+    <ClInclude Include=".\curl_addrinfo.h" />
+    <ClInclude Include=".\curl_sspi.h" />
+    <ClInclude Include=".\slist.h" />
+    <ClInclude Include=".\nonblock.h" />
+    <ClInclude Include=".\curl_memrchr.h" />
+    <ClInclude Include=".\imap.h" />
+    <ClInclude Include=".\pop3.h" />
+    <ClInclude Include=".\smtp.h" />
+    <ClInclude Include=".\pingpong.h" />
+    <ClInclude Include=".\rtsp.h" />
+    <ClInclude Include=".\curl_threads.h" />
+    <ClInclude Include=".\warnless.h" />
+    <ClInclude Include=".\curl_hmac.h" />
+    <ClInclude Include=".\curl_rtmp.h" />
+    <ClInclude Include=".\curl_gethostname.h" />
+    <ClInclude Include=".\gopher.h" />
+    <ClInclude Include=".\http_proxy.h" />
+    <ClInclude Include=".\non-ascii.h" />
+    <ClInclude Include=".\asyn.h" />
+    <ClInclude Include=".\http_ntlm.h" />
+    <ClInclude Include=".\curl_gssapi.h" />
+    <ClInclude Include=".\curl_ntlm_wb.h" />
+    <ClInclude Include=".\curl_ntlm_core.h" />
+    <ClInclude Include=".\curl_sasl.h" />
+    <ClInclude Include=".\curl_multibyte.h" />
+    <ClInclude Include=".\hostcheck.h" />
+    <ClInclude Include=".\conncache.h" />
+    <ClInclude Include=".\curl_setup_once.h" />
+    <ClInclude Include=".\multihandle.h" />
+    <ClInclude Include=".\setup-vms.h" />
+    <ClInclude Include=".\pipeline.h" />
+    <ClInclude Include=".\dotdot.h" />
+    <ClInclude Include=".\x509asn1.h" />
+    <ClInclude Include=".\http2.h" />
+    <ClInclude Include=".\sigpipe.h" />
+    <ClInclude Include=".\smb.h" />
+    <ClInclude Include=".\curl_endian.h" />
+    <ClInclude Include=".\curl_des.h" />
+    <ClInclude Include=".\curl_printf.h" />
+    <ClInclude Include=".\system_win32.h" />
+    <ClInclude Include=".\rand.h" />
+    <ClInclude Include=".\vauth\vauth.h" />
+    <ClInclude Include=".\vauth\digest.h" />
+    <ClInclude Include=".\vauth\ntlm.h" />
+    <ClInclude Include=".\vtls\openssl.h" />
+    <ClInclude Include=".\vtls\vtls.h" />
+    <ClInclude Include=".\vtls\gtls.h" />
+    <ClInclude Include=".\vtls\nssg.h" />
+    <ClInclude Include=".\vtls\polarssl.h" />
+    <ClInclude Include=".\vtls\polarssl_threadlock.h" />
+    <ClInclude Include=".\vtls\axtls.h" />
+    <ClInclude Include=".\vtls\cyassl.h" />
+    <ClInclude Include=".\vtls\schannel.h" />
+    <ClInclude Include=".\vtls\darwinssl.h" />
+    <ClInclude Include=".\vtls\gskit.h" />
+    <ClInclude Include=".\vtls\mbedtls.h" />
+    <ClInclude Include=".\curl_config.h" />
+    <ClInclude Include=".lude\curl\curlbuild.h" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\open_source\curl_winbuild\all2\src\curl\lib\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="E:\open_source\curl_winbuild\all2\src\curl\lib\libcurl.rc">
-      <Filter>Source Files</Filter>
-    </ResourceCompile>
+    <ResourceCompile Include="$(SolutionDir)\curl\lib\libcurl.rc" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">

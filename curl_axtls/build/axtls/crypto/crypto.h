@@ -43,7 +43,7 @@ extern "C" {
 #include "bigint.h"
 
 #ifndef STDCALL
-#define STDCALL
+#define STDCALL __stdcall
 #endif
 #ifndef EXP_FUNC
 #define EXP_FUNC

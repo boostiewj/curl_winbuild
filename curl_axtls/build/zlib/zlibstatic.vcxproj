@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\open_source\curl_winbuild\all2\src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -66,10 +66,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\open_source\curl_winbuild\all2\src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\open_source\curl_winbuild\all2\src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -82,7 +82,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\open_source\curl_winbuild\all2\src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -99,10 +99,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\open_source\curl_winbuild\all2\src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\open_source\curl_winbuild\all2\src\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -114,65 +114,35 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\open_source\curl_winbuild\all2\src\zlib\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/open_source/curl_winbuild/all2/src/zlib/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HE:/open_source/curl_winbuild/all2/src/zlib -BE:/open_source/curl_winbuild/all2/src/zlib --check-stamp-file E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/open_source/curl_winbuild/all2/src/zlib/CMakeLists.txt;E:\open_source\curl_winbuild\all2\src\zlib\CMakeLists.txt;E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\3.9.0-rc1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\3.9.0-rc1\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\3.9.0-rc1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCSourceCompiles.cmake;E:\open_source\curl_winbuild\all2\src\zlib\zlib.pc.cmakein;E:\open_source\curl_winbuild\all2\src\zlib\zconf.h.cmakein;E:\open_source\curl_winbuild\all2\src\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/open_source/curl_winbuild/all2/src/zlib/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HE:/open_source/curl_winbuild/all2/src/zlib -BE:/open_source/curl_winbuild/all2/src/zlib --check-stamp-file E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/open_source/curl_winbuild/all2/src/zlib/CMakeLists.txt;E:\open_source\curl_winbuild\all2\src\zlib\CMakeLists.txt;E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\3.9.0-rc1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\3.9.0-rc1\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\3.9.0-rc1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCSourceCompiles.cmake;E:\open_source\curl_winbuild\all2\src\zlib\zlib.pc.cmakein;E:\open_source\curl_winbuild\all2\src\zlib\zconf.h.cmakein;E:\open_source\curl_winbuild\all2\src\zlib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-    </CustomBuild>
+    <ClCompile Include="adler32.c" />
+    <ClCompile Include="compress.c" />
+    <ClCompile Include="crc32.c" />
+    <ClCompile Include="deflate.c" />
+    <ClCompile Include="gzclose.c" />
+    <ClCompile Include="gzlib.c" />
+    <ClCompile Include="gzread.c" />
+    <ClCompile Include="gzwrite.c" />
+    <ClCompile Include="inflate.c" />
+    <ClCompile Include="infback.c" />
+    <ClCompile Include="inftrees.c" />
+    <ClCompile Include="inffast.c" />
+    <ClCompile Include="trees.c" />
+    <ClCompile Include="uncompr.c" />
+    <ClCompile Include="zutil.c" />
+    <ClInclude Include="zconf.h" />
+    <ClInclude Include="zlib.h" />
+    <ClInclude Include="crc32.h" />
+    <ClInclude Include="deflate.h" />
+    <ClInclude Include="gzguts.h" />
+    <ClInclude Include="inffast.h" />
+    <ClInclude Include="inffixed.h" />
+    <ClInclude Include="inflate.h" />
+    <ClInclude Include="inftrees.h" />
+    <ClInclude Include="trees.h" />
+    <ClInclude Include="zutil.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\adler32.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\compress.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\crc32.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\deflate.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\gzclose.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\gzlib.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\gzread.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\gzwrite.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\inflate.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\infback.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\inftrees.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\inffast.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\trees.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\uncompr.c" />
-    <ClCompile Include="E:\open_source\curl_winbuild\all2\src\zlib\zutil.c" />
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\zlib\zconf.h" />
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\zlib\zlib.h" />
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\zlib\crc32.h" />
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\zlib\deflate.h" />
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\zlib\gzguts.h" />
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\zlib\inffast.h" />
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\zlib\inffixed.h" />
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\zlib\inflate.h" />
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\zlib\inftrees.h" />
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\zlib\trees.h" />
-    <ClInclude Include="E:\open_source\curl_winbuild\all2\src\zlib\zutil.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="E:\open_source\curl_winbuild\all2\src\zlib\ZERO_CHECK.vcxproj">
+    <ProjectReference Include="ZERO_CHECK.vcxproj">
       <Project>{B99D528C-EA10-39CE-BBDC-06C971499612}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
