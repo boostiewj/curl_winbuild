@@ -1,0 +1,13 @@
+prefix=C:/Program Files (x86)/zlib
+exec_prefix=C:/Program Files (x86)/zlib
+libdir=E:/open_source/curl_winbuild/all2/src/out/lib
+sharedlibdir=E:/open_source/curl_winbuild/all2/src/out/lib
+includedir=E:/open_source/curl_winbuild/all2/src/out/include/zlib
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.8
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

@@ -1,0 +1,168 @@
+Determining size of off64_t failed with the following output:
+Change Dir: E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_946d1.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) 生成引擎版本 15.1.1012.6693
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2017/6/7 10:05:12。
+节点 1 上的项目“E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_946d1.dir\Debug\”。
+  正在创建目录“E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_946d1.dir\Debug\cmTC_946d1.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_946d1.dir\Debug\cmTC_946d1.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  D:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\bin\HostX86\x86\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_946d1.dir\Debug\\" /Fd"cmTC_946d1.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.10.25019 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_946d1.dir\Debug\\" /Fd"cmTC_946d1.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c
+  
+  OFF64_T.c
+E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c(19): error C2065: “off64_t”: 未声明的标识符 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj]
+E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c(20): error C2065: “off64_t”: 未声明的标识符 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj]
+E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c(21): error C2065: “off64_t”: 未声明的标识符 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj]
+E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c(22): error C2065: “off64_t”: 未声明的标识符 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj]
+E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c(23): error C2065: “off64_t”: 未声明的标识符 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj]
+已完成生成项目“E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c(19): error C2065: “off64_t”: 未声明的标识符 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj]
+  E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c(20): error C2065: “off64_t”: 未声明的标识符 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj]
+  E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c(21): error C2065: “off64_t”: 未声明的标识符 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj]
+  E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c(22): error C2065: “off64_t”: 未声明的标识符 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj]
+  E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CheckTypeSize\OFF64_T.c(23): error C2065: “off64_t”: 未声明的标识符 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_946d1.vcxproj]
+
+    0 个警告
+    5 个错误
+
+已用时间 00:00:00.84
+
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function fseeko exists failed with the following output:
+Change Dir: E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_8666a.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) 生成引擎版本 15.1.1012.6693
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2017/6/7 10:05:13。
+节点 1 上的项目“E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_8666a.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_8666a.dir\Debug\”。
+  正在创建目录“E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_8666a.dir\Debug\cmTC_8666a.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_8666a.dir\Debug\cmTC_8666a.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  D:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\bin\HostX86\x86\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8666a.dir\Debug\\" /Fd"cmTC_8666a.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.9\Modules\CheckFunctionExists.c"
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.10.25019 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8666a.dir\Debug\\" /Fd"cmTC_8666a.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.9\Modules\CheckFunctionExists.c"
+  CheckFunctionExists.c
+  
+Link:
+  D:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\Debug\cmTC_8666a.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/CMakeTmp/Debug/cmTC_8666a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/CMakeTmp/Debug/cmTC_8666a.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_8666a.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _fseeko，该符号在函数 _main 中被引用 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_8666a.vcxproj]
+E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\Debug\cmTC_8666a.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_8666a.vcxproj]
+已完成生成项目“E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_8666a.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_8666a.vcxproj”(默认目标) (1) ->
+(Link 目标) -> 
+  CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 _fseeko，该符号在函数 _main 中被引用 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_8666a.vcxproj]
+  E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\Debug\cmTC_8666a.exe : fatal error LNK1120: 1 个无法解析的外部命令 [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_8666a.vcxproj]
+
+    0 个警告
+    2 个错误
+
+已用时间 00:00:00.95
+
+
+Determining if the include file unistd.h exists failed with the following output:
+Change Dir: E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_cd1cc.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) 生成引擎版本 15.1.1012.6693
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2017/6/7 10:05:15。
+节点 1 上的项目“E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_cd1cc.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“cmTC_cd1cc.dir\Debug\”。
+  正在创建目录“E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\Debug\”。
+  正在创建目录“cmTC_cd1cc.dir\Debug\cmTC_cd1cc.tlog\”。
+InitializeBuildStatus:
+  正在创建“cmTC_cd1cc.dir\Debug\cmTC_cd1cc.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  D:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\bin\HostX86\x86\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cd1cc.dir\Debug\\" /Fd"cmTC_cd1cc.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.10.25019 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  
+  cl /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cd1cc.dir\Debug\\" /Fd"cmTC_cd1cc.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  CheckIncludeFile.c
+  
+E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_cd1cc.vcxproj]
+已完成生成项目“E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_cd1cc.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_cd1cc.vcxproj”(默认目标) (1) ->
+(ClCompile 目标) -> 
+  E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: 无法打开包括文件: “unistd.h”: No such file or directory [E:\open_source\curl_winbuild\all2\src\zlib\CMakeFiles\CMakeTmp\cmTC_cd1cc.vcxproj]
+
+    0 个警告
+    1 个错误
+
+已用时间 00:00:01.43
+
+

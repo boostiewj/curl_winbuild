@@ -1,0 +1,24 @@
+# CMake generation dependency list for this directory.
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeLists.txt
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/3.9.0-rc1/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeSystemSpecificInitialize.cmake
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/3.9.0-rc1/CMakeCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/Platform/Windows-MSVC.cmake
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/3.9.0-rc1/CMakeRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.9/Modules/CheckCSourceCompiles.cmake
+E:/open_source/curl_winbuild/all2/src/zlib/zlib.pc.cmakein
+E:/open_source/curl_winbuild/all2/src/zlib/zconf.h.cmakein

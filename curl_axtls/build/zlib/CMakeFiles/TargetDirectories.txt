@@ -1,0 +1,8 @@
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/RUN_TESTS.dir
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/zlib.dir
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/example.dir
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/zlibstatic.dir
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/minigzip.dir
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/INSTALL.dir
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/ALL_BUILD.dir
+E:/open_source/curl_winbuild/all2/src/zlib/CMakeFiles/ZERO_CHECK.dir
