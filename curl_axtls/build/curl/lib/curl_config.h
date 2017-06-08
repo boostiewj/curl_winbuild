@@ -43,16 +43,16 @@
 #define CURL_DISABLE_POP3 1
 
 /* to disable proxies */
-/* #undef CURL_DISABLE_PROXY */
+#define CURL_DISABLE_PROXY 1
 
 /* to disable RTSP */
 #define CURL_DISABLE_RTSP 1
 
 /* to disable RTMP */
-/* #undef CURL_DISABLE_RTMP */
+#define CURL_DISABLE_RTMP
 
-/* to disable SMB */
-/* #undef CURL_DISABLE_SMB */
+/* to disable SMB/CIFS */
+#define CURL_DISABLE_SMB 1
 
 /* to disable SMTP */
 #define CURL_DISABLE_SMTP 1
@@ -86,6 +86,7 @@
 /* #undef EGD_SOCKET */
 
 /* Define if you want to enable IPv6 support */
+/* #undef ENABLE_IPV6 */
 #define ENABLE_IPV6 1
 
 /* Define to the type qualifier of arg 1 for getnameinfo. */

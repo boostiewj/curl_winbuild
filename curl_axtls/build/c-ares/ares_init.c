@@ -720,7 +720,7 @@ static int get_DNS_Registry_9X(char **outptr)
     return 0;
 
   gotString = get_REG_SZ_9X(hKey_VxD_MStcp, NAMESERVER, outptr);
-  RegCloseKeyA(hKey_VxD_MStcp);
+  RegCloseKey(hKey_VxD_MStcp);
 
   if (!gotString || !*outptr)
     return 0;
@@ -787,9 +787,9 @@ static int get_DNS_Registry_NT(char **outptr)
 
 done:
   if (hKey_Interfaces)
-    RegCloseKeyA(hKey_Interfaces);
+    RegCloseKey(hKey_Interfaces);
 
-  RegCloseKeyA(hKey_Tcpip_Parameters);
+  RegCloseKey(hKey_Tcpip_Parameters);
 
   if (!gotString || !*outptr)
     return 0;

@@ -43,11 +43,19 @@ extern "C" {
 #include "bigint.h"
 
 #ifndef STDCALL
-#define STDCALL __stdcall
+#if defined(WIN32)
+#		define STDCALL __stdcall
+#	else
+#		define STDCALL
+#	endif
 #endif
+
 #ifndef EXP_FUNC
 #define EXP_FUNC
 #endif
+
+
+
 
 
 /* enable features based on a 'super-set' capbaility. */
