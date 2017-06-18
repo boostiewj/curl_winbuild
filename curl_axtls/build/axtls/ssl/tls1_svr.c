@@ -92,10 +92,8 @@ int do_svr_handshake(SSL *ssl, int handshake_type, uint8_t *buf, int hs_len)
             if (ret == SSL_OK)    /* verify the cert */
             { 
                 int cert_res;
-                int pathLenConstraint = 0;
-
-                cert_res = x509_verify(ssl->ssl_ctx->ca_cert_ctx, 
-                        ssl->x509_ctx, &pathLenConstraint);
+                cert_res = x509_verify(
+                        ssl->ssl_ctx->ca_cert_ctx, ssl->x509_ctx);
                 ret = (cert_res == 0) ? SSL_OK : SSL_X509_ERROR(cert_res);
             }
             break;
@@ -208,7 +206,7 @@ do_compression:
         ext_len += buf[offset++];
         PARANOIA_CHECK(pkt_size, offset + ext_len);
         
-        if (ext == SSL_EXT_SIG_ALG)
+        if (ext == SIG_ALG_EXTENSION)
         {
             while (ext_len > 0)
             {

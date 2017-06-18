@@ -448,7 +448,6 @@ static void do_client(int argc, char *argv[])
     uint8_t session_id[SSL_SESSION_ID_SIZE];
     fd_set read_set;
     const char *password = NULL;
-    SSL_EXTENSIONS *extensions = NULL;
 
     FD_ZERO(&read_set);
     sin_addr = inet_addr("127.0.0.1");
@@ -534,16 +533,6 @@ static void do_client(int argc, char *argv[])
             }
 
             password = argv[++i];
-        }
-        else if (strcmp(argv[i], "-servername") == 0)
-        {
-            if (i >= argc-1)
-            {
-                print_client_options(argv[i]);
-            }
-
-            extensions = ssl_ext_new();
-            extensions->host_name = argv[++i];
         }
 #ifdef CONFIG_SSL_FULL_MODE
         else if (strcmp(argv[i], "-debug") == 0)
@@ -641,7 +630,7 @@ static void do_client(int argc, char *argv[])
         while (reconnect--)
         {
             ssl = ssl_client_new(ssl_ctx, client_fd, session_id,
-                    sizeof(session_id), extensions);
+                    sizeof(session_id));
             if ((res = ssl_handshake_status(ssl)) != SSL_OK)
             {
                 if (!quiet)
@@ -669,7 +658,7 @@ static void do_client(int argc, char *argv[])
     }
     else
     {
-        ssl = ssl_client_new(ssl_ctx, client_fd, NULL, 0, extensions);
+        ssl = ssl_client_new(ssl_ctx, client_fd, NULL, 0);
     }
 
     /* check the return status */
@@ -685,6 +674,13 @@ static void do_client(int argc, char *argv[])
 
     if (!quiet)
     {
+        const char *common_name = ssl_get_cert_dn(ssl,
+                SSL_X509_CERT_COMMON_NAME);
+        if (common_name)
+        {
+            printf("Common Name:\t\t\t%s\n", common_name);
+        }
+
         display_session_id(ssl);
         display_cipher(ssl);
     }
@@ -833,8 +829,7 @@ static void print_client_options(char *option)
     printf(" -quiet\t\t- No client output\n");
     printf(" -reconnect\t- Drop and re-make the connection "
             "with the same Session-ID\n");
-    printf(" -pass\t\t- Private key file pass phrase source\n");
-    printf(" -servername\t- Set TLS extension servername in ClientHello\n");
+    printf(" -pass\t\t- private key file pass phrase source\n");
 #ifdef CONFIG_SSL_FULL_MODE
     printf(" -debug\t\t- Print more output\n");
     printf(" -state\t\t- Show state messages\n");

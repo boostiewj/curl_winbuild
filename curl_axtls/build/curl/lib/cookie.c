@@ -5,7 +5,7 @@
  *                            | (__| |_| |  _ <| |___
  *                             \___|\___/|_| \_\_____|
  *
- * Copyright (C) 1998 - 2017, Daniel Stenberg, <daniel@haxx.se>, et al.
+ * Copyright (C) 1998 - 2016, Daniel Stenberg, <daniel@haxx.se>, et al.
  *
  * This software is licensed as described in the file COPYING, which
  * you should have received as part of this distribution. The terms
@@ -492,6 +492,7 @@ Curl_cookie_add(struct Curl_easy *data,
         }
         else if(strcasecompare("domain", name)) {
           bool is_ip;
+          const char *dotp;
 
           /* Now, we make sure that our host is within the given domain,
              or the given domain is not valid and thus cannot be set. */
@@ -499,22 +500,12 @@ Curl_cookie_add(struct Curl_easy *data,
           if('.' == whatptr[0])
             whatptr++; /* ignore preceding dot */
 
-#ifndef USE_LIBPSL
-          /*
-           * Without PSL we don't know when the incoming cookie is set on a
-           * TLD or otherwise "protected" suffix. To reduce risk, we require a
-           * dot OR the exact host name being "localhost".
-           */
-          {
-            const char *dotp;
-            /* check for more dots */
-            dotp = strchr(whatptr, '.');
-            if(!dotp && !strcasecompare("localhost", whatptr))
-              domain=":";
-          }
-#endif
-
           is_ip = isip(domain ? domain : whatptr);
+
+          /* check for more dots */
+          dotp = strchr(whatptr, '.');
+          if(!dotp)
+            domain=":";
 
           if(!domain
              || (is_ip && !strcmp(whatptr, domain))
@@ -1064,16 +1055,16 @@ static int cookie_sort(const void *p1, const void *p2)
 #define CLONE(field)                     \
   do {                                   \
     if(src->field) {                     \
-      d->field = strdup(src->field);     \
-      if(!d->field)                      \
+      dup->field = strdup(src->field);   \
+      if(!dup->field)                    \
         goto fail;                       \
     }                                    \
   } while(0)
 
 static struct Cookie *dup_cookie(struct Cookie *src)
 {
-  struct Cookie *d = calloc(sizeof(struct Cookie), 1);
-  if(d) {
+  struct Cookie *dup = calloc(sizeof(struct Cookie), 1);
+  if(dup) {
     CLONE(expirestr);
     CLONE(domain);
     CLONE(path);
@@ -1082,16 +1073,16 @@ static struct Cookie *dup_cookie(struct Cookie *src)
     CLONE(value);
     CLONE(maxage);
     CLONE(version);
-    d->expires = src->expires;
-    d->tailmatch = src->tailmatch;
-    d->secure = src->secure;
-    d->livecookie = src->livecookie;
-    d->httponly = src->httponly;
+    dup->expires = src->expires;
+    dup->tailmatch = src->tailmatch;
+    dup->secure = src->secure;
+    dup->livecookie = src->livecookie;
+    dup->httponly = src->httponly;
   }
-  return d;
+  return dup;
 
   fail:
-  freecookie(d);
+  freecookie(dup);
   return NULL;
 }
 

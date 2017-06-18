@@ -22,9 +22,7 @@
 
 #include "curl_setup.h"
 
-#ifdef HAVE_FCNTL_H
 #include <fcntl.h>
-#endif
 
 #include <curl/curl.h>
 #include "vtls/vtls.h"

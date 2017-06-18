@@ -5,7 +5,7 @@
  *                            | (__| |_| |  _ <| |___
  *                             \___|\___/|_| \_\_____|
  *
- * Copyright (C) 1998 - 2017, Daniel Stenberg, <daniel@haxx.se>, et al.
+ * Copyright (C) 1998 - 2016, Daniel Stenberg, <daniel@haxx.se>, et al.
  *
  * This software is licensed as described in the file COPYING, which
  * you should have received as part of this distribution. The terms
@@ -127,8 +127,7 @@ const struct Curl_handler Curl_handler_pop3 = {
   ZERO_NULL,                        /* readwrite */
   PORT_POP3,                        /* defport */
   CURLPROTO_POP3,                   /* protocol */
-  PROTOPT_CLOSEACTION | PROTOPT_NOURLQUERY | /* flags */
-  PROTOPT_URLOPTIONS
+  PROTOPT_CLOSEACTION | PROTOPT_NOURLQUERY /* flags */
 };
 
 #ifdef USE_SSL
@@ -154,7 +153,7 @@ const struct Curl_handler Curl_handler_pop3s = {
   PORT_POP3S,                       /* defport */
   CURLPROTO_POP3S,                  /* protocol */
   PROTOPT_CLOSEACTION | PROTOPT_SSL
-  | PROTOPT_NOURLQUERY | PROTOPT_URLOPTIONS /* flags */
+  | PROTOPT_NOURLQUERY              /* flags */
 };
 #endif
 
@@ -800,7 +799,7 @@ static CURLcode pop3_state_starttls_resp(struct connectdata *conn,
 
   if(pop3code != '+') {
     if(data->set.use_ssl != CURLUSESSL_TRY) {
-      failf(data, "STARTTLS denied");
+      failf(data, "STARTTLS denied. %c", pop3code);
       result = CURLE_USE_SSL_FAILED;
     }
     else

@@ -918,7 +918,6 @@ static CURLcode ssh_statemach_act(struct connectdata *conn, bool *block)
                                          &err_msg, NULL, 0);
         infof(data, "SSH public key authentication failed: %s\n", err_msg);
         state(conn, SSH_AUTH_PASS_INIT);
-        rc = 0; /* clear rc and continue */
       }
       break;
 
@@ -929,7 +928,6 @@ static CURLcode ssh_statemach_act(struct connectdata *conn, bool *block)
       }
       else {
         state(conn, SSH_AUTH_HOST_INIT);
-        rc = 0; /* clear rc and continue */
       }
       break;
 
@@ -991,7 +989,6 @@ static CURLcode ssh_statemach_act(struct connectdata *conn, bool *block)
         if(rc < 0) {
           infof(data, "Failure connecting to agent\n");
           state(conn, SSH_AUTH_KEY_INIT);
-          rc = 0; /* clear rc and continue */
         }
         else {
           state(conn, SSH_AUTH_AGENT_LIST);
@@ -1011,7 +1008,6 @@ static CURLcode ssh_statemach_act(struct connectdata *conn, bool *block)
       if(rc < 0) {
         infof(data, "Failure requesting identities to agent\n");
         state(conn, SSH_AUTH_KEY_INIT);
-        rc = 0; /* clear rc and continue */
       }
       else {
         state(conn, SSH_AUTH_AGENT);
@@ -1804,7 +1800,6 @@ static CURLcode ssh_statemach_act(struct connectdata *conn, bool *block)
                   (data->set.ftp_create_missing_dirs &&
                    (strlen(sftp_scp->path) > 1))) {
             /* try to create the path remotely */
-            rc = 0; /* clear rc and continue */
             sshc->secondCreateDirs = 1;
             state(conn, SSH_SFTP_CREATE_DIRS_INIT);
             break;
@@ -1941,7 +1936,7 @@ static CURLcode ssh_statemach_act(struct connectdata *conn, bool *block)
       }
       *sshc->slash_pos = '/';
       ++sshc->slash_pos;
-      if(rc < 0) {
+      if(rc == -1) {
         /*
          * Abort if failure wasn't that the dir already exists or the
          * permission was denied (creation might succeed further down the
@@ -1955,9 +1950,6 @@ static CURLcode ssh_statemach_act(struct connectdata *conn, bool *block)
           state(conn, SSH_SFTP_CLOSE);
           sshc->actualcode = result?result:CURLE_SSH;
           break;
-        }
-        else {
-          rc = 0; /* clear rc and continue */
         }
       }
       state(conn, SSH_SFTP_CREATE_DIRS);

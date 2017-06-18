@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2007-2016, Cameron Rich
+# Copyright (c) 2007, Cameron Rich
 #
 # All rights reserved.
 #
@@ -59,8 +59,7 @@ include $(AXTLS_HOME)/config/makefile.post
 ifndef CONFIG_PLATFORM_WIN32
 
 $(TARGET): $(OBJ) $(LIBS)/libaxtls.a
-	$(LD) $(LDFLAGS) -o $@ $(OBJ) $(LIBS)/libaxtls.a
-#	$(LD) $(LDFLAGS) -o $@ $(OBJ) -L$(LIBS) -laxtls (shared library)
+	$(LD) $(LDFLAGS) -o $@ $(OBJ) -L$(LIBS) -laxtls 
 ifdef CONFIG_STRIP_UNWANTED_SECTIONS
 	$(STRIP) --remove-section=.comment $(TARGET)
 endif   # use strip

@@ -5,7 +5,7 @@
  *                            | (__| |_| |  _ <| |___
  *                             \___|\___/|_| \_\_____|
  *
- * Copyright (C) 1998 - 2017, Daniel Stenberg, <daniel@haxx.se>, et al.
+ * Copyright (C) 1998 - 2016, Daniel Stenberg, <daniel@haxx.se>, et al.
  *
  * This software is licensed as described in the file COPYING, which
  * you should have received as part of this distribution. The terms
@@ -126,8 +126,7 @@ const struct Curl_handler Curl_handler_smtp = {
   ZERO_NULL,                        /* readwrite */
   PORT_SMTP,                        /* defport */
   CURLPROTO_SMTP,                   /* protocol */
-  PROTOPT_CLOSEACTION | PROTOPT_NOURLQUERY | /* flags */
-  PROTOPT_URLOPTIONS
+  PROTOPT_CLOSEACTION | PROTOPT_NOURLQUERY /* flags */
 };
 
 #ifdef USE_SSL
@@ -153,7 +152,7 @@ const struct Curl_handler Curl_handler_smtps = {
   PORT_SMTPS,                       /* defport */
   CURLPROTO_SMTPS,                  /* protocol */
   PROTOPT_CLOSEACTION | PROTOPT_SSL
-  | PROTOPT_NOURLQUERY | PROTOPT_URLOPTIONS /* flags */
+  | PROTOPT_NOURLQUERY              /* flags */
 };
 #endif
 
@@ -693,7 +692,7 @@ static CURLcode smtp_state_starttls_resp(struct connectdata *conn,
 
   if(smtpcode != 220) {
     if(data->set.use_ssl != CURLUSESSL_TRY) {
-      failf(data, "STARTTLS denied, code %d", smtpcode);
+      failf(data, "STARTTLS denied. %c", smtpcode);
       result = CURLE_USE_SSL_FAILED;
     }
     else
