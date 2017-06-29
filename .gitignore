@@ -1,3 +1,7 @@
 *.db
 obj
 .vs
+*.gz
+*.bak
+*.idb
+*.opendb

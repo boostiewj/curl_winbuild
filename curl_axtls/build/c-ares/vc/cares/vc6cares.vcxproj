@@ -23,6 +23,7 @@
     <PlatformToolset>v140_xp</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -66,7 +67,7 @@
       <AssemblerListingLocation>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\obj\</AssemblerListingLocation>
       <PrecompiledHeaderOutputFile>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\obj\vc6cares.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\obj\</ObjectFileName>
-      <ProgramDataBaseFileName>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\obj\</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
     </ClCompile>
     <ResourceCompile>
@@ -99,7 +100,7 @@
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>$(IntDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <Culture>0x0409</Culture>
