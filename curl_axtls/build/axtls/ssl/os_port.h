@@ -47,7 +47,7 @@ extern "C" {
 
 #if defined(WIN32)
 #define STDCALL                 __stdcall
-#define EXP_FUNC                __declspec(dllexport)
+#define EXP_FUNC                //__declspec(dllexport)
 #else
 #define STDCALL
 #define EXP_FUNC
