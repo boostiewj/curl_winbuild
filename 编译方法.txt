@@ -25,3 +25,15 @@ nmake /f Makefile.vc10 CFG=release-dll-ssl-dll-zlib-dll
 nmake /f Makefile.vc10 CFG=debug-dll-ssl-dll-zlib-dll
 nmake /f Makefile.vc10 CFG=release-ssl-zlib
 nmake /f Makefile.vc10 CFG=debug-ssl-zlib
+
+±‡“Îopenssl–¬∞Ê±æ1.1.1
+cd zlib 
+del *.obj *.res
+nmake -f win32/Makefile.msc LOC="-DASMV -DASMINF  -MTd -Fd"zlib"" OBJA="inffas32.obj match686.obj"  STATICLIB="zlib.lib" SHAREDLIB="zlib1.dll" IMPLIB="zlib1.lib" 
+nmake -f win32/Makefile.msc LOC="-DASMV -DASMINF  -MT -Fd"zlib"" OBJA="inffas32.obj match686.obj"  STATICLIB="zlib.lib" SHAREDLIB="zlib1.dll" IMPLIB="zlib1.lib" 
+perl Configure VC-WIN32 zlib no-asm no-shared --prefix=D:\opensource\curl_7.54_build2015\openssl-1.1.1\bin --with-zlib-include=D:\opensource\curl_7.54_build2015\zlib-1.2.8 --with-zlib-lib=D:\opensource\curl_7.54_build2015\zlib-1.2.8\zlib.lib
+perl Configure debug-VC-WIN32 zlib no-asm no-shared --prefix=D:\opensource\curl_7.54_build2015\openssl-1.1.1\bin --with-zlib-include=D:\opensource\curl_7.54_build2015\zlib-1.2.8 --with-zlib-lib=D:\opensource\curl_7.54_build2015\zlib-1.2.8\zlibd.lib
+nmake
+
+-D"_USING_V110_SDK71_" 
+/MTd
